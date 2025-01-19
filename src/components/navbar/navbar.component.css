@@ -1,0 +1,17 @@
+.margin{
+    margin-left: 12%;
+}
+
+
+@media (max-width: 1124px) {
+    .margin{
+        margin-left: 5%;
+    }
+}
+
+
+@media  (max-width: 1080px) {
+    .margin{
+        margin-left: 0%;
+    }
+}
