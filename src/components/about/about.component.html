@@ -1,42 +1,56 @@
 <!-- hero-section.component.html -->
-<section
-  class="about-section d-flex p-5 "
-  style="background-color: #f3ecec"
->
-  <div class="container-fluid p-5 ">
-    <div class="row d-flex align-items-center justify-content-between ">
+<section class="about-section d-flex p-5" style="background-color: #f3ecec">
+  <div class="container-fluid p-5">
+    <div class="row d-flex align-items-center justify-content-between">
       <!-- Left Content -->
       <div class="col-lg-8 col-md-12 mb-3 text-left r">
         <h2>Arya's BMS & IA Training Institute</h2>
-        <div
-          class=" my-4 d-flex flex-wrap justify-content-between button-container col-10 "
-        >
+        <div class="my-4 d-flex flex-wrap justify-content-between button-container col-10">
           <div class="button-div">
-            <button class="text-body-secondary">Institute</button>
+            <button class="text-body-secondary" (click)="showContent('institute')">Institute</button>
           </div>
           <div class="button-div">
-            <button class="text-body-secondary">Founder</button>
+            <button class="text-body-secondary" (click)="showContent('founder')">Founder</button>
           </div>
           <div class="button-div">
-            <button class="text-body-secondary">Mission</button>
+            <button class="text-body-secondary" (click)="showContent('mission')">Mission</button>
           </div>
           <div class="button-div">
-            <button class="text-body-secondary">Vision</button>
+            <button class="text-body-secondary" (click)="showContent('vision')">Vision</button>
           </div>
         </div>
-        <div>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis
-            animi debitis ut voluptatum totam temporibus harum a eius velit
-            nemo, ad ex aliquam dolorem? Magnam fugiat saepe ratione ipsa error,
-            minima suscipit veniam libero autem laboriosam nostrum aspernatur ex
-            ad.
+
+        <!-- Institute Content -->
+        <div *ngIf="activeContent === 'institute'">
+          <p>institute
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis animi debitis ut voluptatum...
+          </p>
+        </div>
+
+        <!-- Founder Content -->
+        <div *ngIf="activeContent === 'founder'">
+          <p>founder
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis animi debitis ut voluptatum...
+          </p>
+        </div>
+
+        <!-- Mission Content -->
+        <div *ngIf="activeContent === 'mission'">
+          <p>mission
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis animi debitis ut voluptatum...
+          </p>
+        </div>
+
+        <!-- Vision Content -->
+        <div *ngIf="activeContent === 'vision'">
+          <p>vision
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis animi debitis ut voluptatum...
           </p>
         </div>
       </div>
 
       <!-- Right Image -->
-      <div class="col-lg-3 col-md-12 text-center ">
+      <div class="col-lg-3 col-md-12 text-center">
         <div class="div1"></div>
         <div class="div2"></div>
       </div>

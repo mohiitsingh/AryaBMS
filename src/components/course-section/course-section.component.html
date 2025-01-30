@@ -1,0 +1,9 @@
+<!-- Course Section -->
+<section class="container-fluid p-5">
+  <h2 class="text-center mb-4">Courses</h2>
+  <div class="row  d-flex justify-content-around align-items-center p-3">
+    <div class="col-md-5 " *ngFor="let course of courses">
+      <app-course [course]="course"></app-course>
+    </div>
+  </div>
+</section>
