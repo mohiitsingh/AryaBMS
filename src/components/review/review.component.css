@@ -1,0 +1,38 @@
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  
+  .carousel-container {
+    position: relative;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: black;
+  }
+  
+  .carousel-control-prev, 
+  .carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+  }
+  
+  @media (max-width: 767px) {
+    .carousel-control-prev, 
+    .carousel-control-next {
+      font-size: 1.5rem;
+    }
+  }
+  

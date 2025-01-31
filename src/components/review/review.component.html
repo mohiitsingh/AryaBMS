@@ -1,0 +1,30 @@
+<div class="container py-5">
+    <h2 class="text-center mb-4">What Our Students Say</h2>
+  
+    <!-- Reviews Section -->
+    <div class="carousel-container">
+      <div class="row">
+        <!-- Show two reviews per slide -->
+        <div class="col-md-6" *ngFor="let review of reviews.slice(currentIndex, currentIndex + 2)">
+          <div class="card">
+            <img [src]="review.image" class="card-img-top" alt="Student Image">
+            <div class="card-body">
+              <h5 class="card-title">{{ review.name }}</h5>
+              <p class="card-text">{{ review.review }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Carousel Controls -->
+      <button (click)="goToPrevious()" class="carousel-control-prev btn btn-dark" aria-label="Previous">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button (click)="goToNext()" class="carousel-control-next btn btn-dark" aria-label="Next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  

@@ -7,44 +7,72 @@
         <h2>Arya's BMS & IA Training Institute</h2>
         <div class="my-4 d-flex flex-wrap justify-content-between button-container col-10">
           <div class="button-div">
-            <button class="text-body-secondary" (click)="showContent('institute')">Institute</button>
+            <button
+              class="text-body-secondary"
+              [ngClass]="{'active-button': activeContent === 'institute'}"
+              (click)="showContent('institute')"
+            >
+              Institute
+            </button>
           </div>
           <div class="button-div">
-            <button class="text-body-secondary" (click)="showContent('founder')">Founder</button>
+            <button
+              class="text-body-secondary"
+              [ngClass]="{'active-button': activeContent === 'founder'}"
+              (click)="showContent('founder')"
+            >
+              Founder
+            </button>
           </div>
           <div class="button-div">
-            <button class="text-body-secondary" (click)="showContent('mission')">Mission</button>
+            <button
+              class="text-body-secondary"
+              [ngClass]="{'active-button': activeContent === 'mission'}"
+              (click)="showContent('mission')"
+            >
+              Mission
+            </button>
           </div>
           <div class="button-div">
-            <button class="text-body-secondary" (click)="showContent('vision')">Vision</button>
+            <button
+              class="text-body-secondary"
+              [ngClass]="{'active-button': activeContent === 'vision'}"
+              (click)="showContent('vision')"
+            >
+              Vision
+            </button>
           </div>
         </div>
 
         <!-- Institute Content -->
         <div *ngIf="activeContent === 'institute'">
-          <p>institute
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis animi debitis ut voluptatum...
+          <p>
+            institute Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Blanditiis animi debitis ut voluptatum...
           </p>
         </div>
 
         <!-- Founder Content -->
         <div *ngIf="activeContent === 'founder'">
-          <p>founder
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis animi debitis ut voluptatum...
+          <p>
+            founder Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Blanditiis animi debitis ut voluptatum...
           </p>
         </div>
 
         <!-- Mission Content -->
         <div *ngIf="activeContent === 'mission'">
-          <p>mission
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis animi debitis ut voluptatum...
+          <p>
+            mission Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Blanditiis animi debitis ut voluptatum...
           </p>
         </div>
 
         <!-- Vision Content -->
         <div *ngIf="activeContent === 'vision'">
-          <p>vision
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis animi debitis ut voluptatum...
+          <p>
+            vision Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Blanditiis animi debitis ut voluptatum...
           </p>
         </div>
       </div>
