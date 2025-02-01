@@ -1,5 +1,4 @@
-<!-- navbar.component.html -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light p-3 sticky-top    ">
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 sticky-top    ">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">ARYA INSTITUTE</a>
       <button
@@ -19,10 +18,10 @@
             <a class="nav-link" href="#">HOME</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT</a>
+            <a class="nav-link" href="about">ABOUT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">COURSES</a>
+            <a class="nav-link" href="courses">COURSES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">PLACEMENTS</a>
@@ -31,7 +30,7 @@
             <a class="nav-link" href="#">GALLERY</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" href="contact">CONTACT</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">VALIDATE CERTIFICATE</a>
@@ -41,4 +40,47 @@
       </div>
     
     </div>
-  </nav>
+  </nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light p-3 sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="/home">ARYA INSTITUTE</a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"
+      aria-controls="navbarNav"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/courses">COURSES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/placements">PLACEMENTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/gallery">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/validate-certificate">VALIDATE CERTIFICATE</a>
+        </li>
+      </ul>
+      <button class="btn btn-primary margin">REGISTER NOW</button>
+    </div>
+  </div>
+</nav>

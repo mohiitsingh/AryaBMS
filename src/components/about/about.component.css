@@ -21,3 +21,7 @@
     background-color: #ff9800; /* or any color of your choice */
     color: white;
   }
+
+  li{
+    list-style: none;
+  }

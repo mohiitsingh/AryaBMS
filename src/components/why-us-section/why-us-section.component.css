@@ -1,8 +1,25 @@
-.yellow{
-    background-color: rebeccapurple;
+.yellow {
+  background-color: rebeccapurple;
 }
 
 .active-button {
-    background-color: #ff9800; /* or any color of your choice */
-    color: white;
-  }
+  background-color: #ff9800; /* or any color of your choice */
+  color: white !important;
+}
+
+
+li {
+  list-style: none;
+}
+
+
+button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.2s ease-in;
+}
+
+button:hover{
+    background-color: #008cffc2;
+}

@@ -11,12 +11,12 @@ import { CommonModule } from '@angular/common';
 export class CourseSectionComponent {
   courses = [
     {
-      heading: 'Angular Basics',
-      description: 'Learn the fundamentals of Angular, including components, modules, and services.',
+      heading: 'Building Management Systems (BMS) Certification Program',
+      description: "Learn core BMS concepts with hands-on training on real systems. Gain industry-relevant skills and secure internship opportunities to kickstart your career.",
     },
     {
-      heading: 'Advanced JavaScript',
-      description: 'Dive deep into JavaScript concepts like closures, promises, and async/await.',
+      heading: 'Advanced BMS Systems & Automation Training',
+      description: 'Specialize in advanced BMS technologies and automation. Master system integration and troubleshooting to advance your career in the BMS industry.',
     },
   ];
 }

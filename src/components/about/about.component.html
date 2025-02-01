@@ -1,15 +1,21 @@
 <!-- hero-section.component.html -->
-<section class="about-section d-flex p-5" style="background-color: #f3ecec">
+<section
+  class="about-section d-flex p-5"
+  style="background-color: #f3ecec"
+  id="about"
+>
   <div class="container-fluid p-5">
     <div class="row d-flex align-items-center justify-content-between">
       <!-- Left Content -->
       <div class="col-lg-8 col-md-12 mb-3 text-left r">
         <h2>Arya's BMS & IA Training Institute</h2>
-        <div class="my-4 d-flex flex-wrap justify-content-between button-container col-10">
+        <div
+          class="my-4 d-flex flex-wrap justify-content-between button-container col-10"
+        >
           <div class="button-div">
             <button
               class="text-body-secondary"
-              [ngClass]="{'active-button': activeContent === 'institute'}"
+              [ngClass]="{ 'active-button': activeContent === 'institute' }"
               (click)="showContent('institute')"
             >
               Institute
@@ -18,7 +24,7 @@
           <div class="button-div">
             <button
               class="text-body-secondary"
-              [ngClass]="{'active-button': activeContent === 'founder'}"
+              [ngClass]="{ 'active-button': activeContent === 'founder' }"
               (click)="showContent('founder')"
             >
               Founder
@@ -27,7 +33,7 @@
           <div class="button-div">
             <button
               class="text-body-secondary"
-              [ngClass]="{'active-button': activeContent === 'mission'}"
+              [ngClass]="{ 'active-button': activeContent === 'mission' }"
               (click)="showContent('mission')"
             >
               Mission
@@ -36,7 +42,7 @@
           <div class="button-div">
             <button
               class="text-body-secondary"
-              [ngClass]="{'active-button': activeContent === 'vision'}"
+              [ngClass]="{ 'active-button': activeContent === 'vision' }"
               (click)="showContent('vision')"
             >
               Vision
@@ -46,34 +52,64 @@
 
         <!-- Institute Content -->
         <div *ngIf="activeContent === 'institute'">
-          <p>
-            institute Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Blanditiis animi debitis ut voluptatum...
-          </p>
+          <p>At Arya Institute :</p>
+          <ul>
+            <li>
+              <i class="bi bi-arrow-right-circle mx-2"></i>Specializes in
+              comprehensive Building Management Systems (BMS) training.
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle mx-2"></i>Focus on hands-on
+              learning with industry-standard machines and equipment.
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle mx-2"></i>Limited batch sizes
+              ensure personalized attention for each student.
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle mx-2"></i>Affordable training
+              with placement support and internships.
+            </li>
+            <li>
+              <i class="bi bi-arrow-right-circle mx-2"></i>Strong industry
+              network to help students kickstart their BMS careers.
+            </li>
+          </ul>
         </div>
 
         <!-- Founder Content -->
         <div *ngIf="activeContent === 'founder'">
-          <p>
-            founder Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Blanditiis animi debitis ut voluptatum...
-          </p>
+          <p>Our Founder & Trainer:</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Over 15 years of industry experience in BMS, including work in Dubai.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Passionate about bridging the gap between theory and real-world BMS applications.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Committed to delivering industry-relevant training to prepare students for successful careers.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Focused on providing high-quality education with practical experience.</li>
+          </ul>
         </div>
 
         <!-- Mission Content -->
         <div *ngIf="activeContent === 'mission'">
-          <p>
-            mission Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Blanditiis animi debitis ut voluptatum...
-          </p>
+          <p>Our Mission :</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Provide high-quality, affordable BMS training.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Equip students with hands-on skills and industry knowledge to succeed in the BMS field.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Foster a learning environment with personalized guidance and focused attention.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Offer placement assistance, internships, and real-world exposure to ensure career growth.</li>
+          </ul>
+          
         </div>
 
         <!-- Vision Content -->
         <div *ngIf="activeContent === 'vision'">
-          <p>
-            vision Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Blanditiis animi debitis ut voluptatum...
-          </p>
+          <p>Our Vision :</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Become a leading BMS training institute recognized for excellence in education.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Build strong industry partnerships to enhance learning opportunities and placements.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Empower passionate individuals with the skills and support to thrive in the BMS industry.</li>
+            <li><i class="bi bi-arrow-right-circle mx-2"></i>Shape the future of the BMS workforce through expert training and guidance.</li>
+          </ul>
+          
         </div>
       </div>
 
